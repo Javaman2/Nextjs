@@ -1,20 +1,21 @@
-import Head from 'next/head'
+import Head from 'next/head';
+
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Page Title</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          The  <a href="https://nextjs.org">Main H1 Element</a>
         </h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          A description class paragraph<code>pages/index.js</code>
         </p>
 
         <div className="grid">
@@ -139,18 +140,16 @@ export default function Home() {
         }
 
         .grid {
-          display: flex;
+          display: grid;
+          grid-template-columns:repeat(auto-fit,minmax(20em, 1fr));
           align-items: center;
           justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
+          max-width:80vw;
           margin-top: 3rem;
         }
 
         .card {
-          margin: 1rem;
-          flex-basis: 45%;
+          margin: 1rem;          
           padding: 1.5rem;
           text-align: left;
           color: inherit;
@@ -158,6 +157,7 @@ export default function Home() {
           border: 1px solid #eaeaea;
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
+          box-shadow: 0px 0px 20px 5px lightblue;
         }
 
         .card:hover,
@@ -190,20 +190,7 @@ export default function Home() {
         }
       `}</style>
 
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
+    
     </div>
   )
 }
