@@ -15,9 +15,9 @@ This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 We like Next.js because it has built in routing! Any new function component found in the pages folder is automatically found in the url
 using that name e.g. https://localhost:3000/time
 
-Take a look at the time.js file.
+Take a look at the [time.js](https://github.com/Javaman2/Nextjs/blob/main/pages/time.js) file. This shows how to create a clock updated each second.
 
-Site Templating is simple just put in an _app.js file in the pages folder. Like this:
+Site Templating is simple just put in an [_app.js](https://github.com/Javaman2/Nextjs/blob/main/pages/_app.js) file in the pages folder. Like this:
 
 ```html
 import "../styles/globals.css";
